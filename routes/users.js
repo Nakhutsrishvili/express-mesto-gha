@@ -10,7 +10,7 @@ const {
 } = require('../controllers/users');
 
 router.get('/', getUsers);
-router.get('/', getMeUser);
+router.get('/me', getMeUser);
 
 router.get(
   '/:userId',
